@@ -17,7 +17,9 @@ a {
 
 .container_width {
     margin: 0 auto;
+    position: relative;
     width: 1200px;
+    overflow: hidde
 }
 
 .header_bar {
@@ -53,14 +55,135 @@ a {
 
 /*------- header_content_main -------*/
 
+.header_content_main {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+    display: block;
+}
+
 .header_content .logo {
     float: left;
-    justify-content: center;
-    align-items: center;
+    font-size: 0;
+    text-align: center;
     width: 200px;
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 31px;
 }
 
 .header_content .search {
+    margin: 18px 222px 0 188px;
+    position: relative;
+    z-index: 1;
+}
+
+#header_search {
+    font-size: 13px;
+    width: calc(100% - 70px);
+    overflow: hidden;
+    margin-left: 50px
+}
+
+#header_search .border {
+    border: 2px solid #0c81f6;
+    border-right: none;
+    position: relative;
+    border-radius: 3px;
+}
+
+#header_search .header_search_text {
+    background: #0c81f6;
+    color: #fff;
+    font-size: 17px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 25px 0 12px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#header_search .header_search_text {
+    background: #0c81f6;
+    color: #fff;
+    font-size: 17px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 25px 0 12px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#header_search .button {
+    background: #0c81f6;
+    color: #fff;
+    border: none;
     float: right;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 25px;
+    border-radius: 0;
+    margin: 0;
+    height: 38px;
+    padding: 0 25px 0 12px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#header_search .border a {
+    float: left;
+}
+
+#header_search .keyword {
+    overflow: hidden;
+    max-height: 38px;
+}
+
+#header_search .keyword input {
+    overflow: hidden;
+    border: none transparent;
+    font-size: 14px;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+
+#header_search .keyword input,
+.button:focus {
+    outline: none;
+}
+
+.header_hot_keyword {
+    height: 17px;
+    margin-top: 6px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.header_hot_keyword a {
+    color: #999;
+}
+
+#header_search_option {
+    display: none;
+    width: 250px;
+    background: #f6bf0c;
+    height: 200px;
+}
+
+#header_search_option .header_search_option {
+    min-width: 100px;
+    max-width: 200px;
+    list-style: none;
+}
+
+#header_search_option .header_search_option li {
+    /*display: list-item;*/
 }
